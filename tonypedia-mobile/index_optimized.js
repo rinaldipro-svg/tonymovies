@@ -27,34 +27,61 @@ const C = {
 
 // ─── 12 CORE MOODS ────────────────────────────────────────────────────────────
 const MOODS = [
-  { id: 'melancholic', label: 'Melancholic', emoji: '🌧️' },
-  { id: 'energetic', label: 'Energetic', emoji: '⚡' },
-  { id: 'restless', label: 'Restless', emoji: '🔄' },
-  { id: 'contemplative', label: 'Contemplative', emoji: '🤔' },
-  { id: 'dark', label: 'Dark', emoji: '🌑' },
-  { id: 'joyful', label: 'Joyful', emoji: '😊' },
-  { id: 'intense', label: 'Intense', emoji: '🔥' },
-  { id: 'peaceful', label: 'Peaceful', emoji: '🕊️' },
-  { id: 'nostalgic', label: 'Nostalgic', emoji: '📼' },
-  { id: 'surreal', label: 'Surreal', emoji: '🌀' },
-  { id: 'lonely', label: 'Lonely', emoji: '🌙' },
-  { id: 'inspired', label: 'Inspired', emoji: '✨' },
+  { id: 'Thrilling', label: 'Thrilling', emoji: '💥' },
+  { id: 'Heartwarming', label: 'Heartwarming', emoji: '❤️' },
+  { id: 'Melancholic', label: 'Melancholic', emoji: '🌧️' },
+  { id: 'Mind-bending', label: 'Mind-bending', emoji: '🤯' },
+  { id: 'Darkly comic', label: 'Darkly comic', emoji: '😈' },
+  { id: 'Romantic', label: 'Romantic', emoji: '💕' },
+  { id: 'Haunting', label: 'Haunting', emoji: '👻' },
+  { id: 'Euphoric', label: 'Euphoric', emoji: '🎉' },
+  { id: 'Tense', label: 'Tense', emoji: '⚡' },
+  { id: 'Contemplative', label: 'Contemplative', emoji: '🤔' },
+  { id: 'Triumphant', label: 'Triumphant', emoji: '👑' },
+  { id: 'Visceral', label: 'Visceral', emoji: '🔥' },
 ];
 
 const TOPICS = [
-  'Love', 'Revenge', 'Adventure', 'Survival', 'Redemption',
-  'Discovery', 'Mystery', 'Sacrifice', 'Betrayal', 'Ambition',
-  'Loss', 'Identity'
+  'Identity & self-discovery',
+  'Family & relationships',
+  'Power & corruption',
+  'Survival & resilience',
+  'Love & heartbreak',
+  'Justice & morality',
+  'War & conflict',
+  'Art & creativity',
+  'Isolation & loneliness',
+  'Freedom & rebellion',
+  'Coming of age',
+  'Obsession & ambition',
+  'The heist & the con',
+  'History & civilization',
+  'Science & the unknown'
 ];
 
 const VIBES = [
-  'Dark', 'Epic', 'Intimate', 'Chaotic', 'Contemplative',
-  'Surreal', 'Minimal', 'Explosive', 'Slow-burn', 'Visceral',
-  'Whimsical', 'Haunting'
+  'Cinematic & epic',
+  'Raw & gritty',
+  'Dreamlike & surreal',
+  'Intimate & quiet',
+  'Stylish & cool',
+  'Nostalgic & warm',
+  'Bleak & unflinching',
+  'Whimsical & playful'
 ];
 
-const GENRES = ['Drama', 'Comedy', 'Action', 'Horror', 'Science-Fiction'];
-const ERAS = ['1900-1950', '1950-2000', '2000-2026'];
+const GENRES = [
+  'Drama', 'Comedy', 'Thriller', 'Horror', 'Sci-Fi',
+  'Romance', 'Action', 'Documentary', 'Animation', 'Crime',
+  'War', 'Fantasy', 'Musical', 'Western'
+];
+const ERAS = [
+  'Pre-1960 (Golden Age)',
+  '1960-1979 (New Wave)',
+  '1980-1999 (Modern Classics)',
+  '2000-2014 (Digital Age)',
+  '2015-Present (Contemporary)'
+];
 
 // ─── SCORE BADGE ──────────────────────────────────────────────────────────────
 function ScoreBadge({ label, value, accent, size = 'md' }) {
@@ -386,30 +413,40 @@ const genreStyles = StyleSheet.create({
 
 // ─── ERA CHECKBOXES ────────────────────────────────────────────────────────────
 function EraSelector({ selected, onChange }) {
-  const toggle = (era) => {
-    if (selected.includes(era)) {
-      onChange(selected.filter(e => e !== era));
-    } else {
-      onChange([...selected, era]);
-    }
-  };
-
+  const [open, setOpen] = useState(false);
   return (
-    <View style={eraStyles.wrap}>
-      {ERAS.map((era) => (
-        <TouchableOpacity
-          key={era}
-          style={[eraStyles.btn, selected.includes(era) && eraStyles.btnSelected]}
-          onPress={() => toggle(era)}
-        >
-          <View style={[eraStyles.checkbox, selected.includes(era) && eraStyles.checkboxSelected]}>
-            {selected.includes(era) && <Text style={eraStyles.check}>✓</Text>}
-          </View>
-          <Text style={[eraStyles.label, selected.includes(era) && eraStyles.labelSelected]}>
-            {era}
-          </Text>
-        </TouchableOpacity>
-      ))}
+    <View style={{ marginBottom: 16 }}>
+      <TouchableOpacity
+        style={[genreStyles.btn, open && genreStyles.btnOpen]}
+        onPress={() => setOpen(!open)}
+      >
+        <Text style={genreStyles.btnText}>
+          {selected || 'Era (Optional)'}
+        </Text>
+        <Text style={genreStyles.arrow}>{open ? '▲' : '▼'}</Text>
+      </TouchableOpacity>
+      {open && (
+        <FlatList
+          data={[{ id: 'none', label: 'None' }, ...ERAS.map((e, i) => ({ id: i.toString(), label: e }))]}
+          keyExtractor={(item) => item.id}
+          scrollEnabled
+          style={genreStyles.dropdown}
+          nestedScrollEnabled
+          renderItem={({ item }) => (
+            <TouchableOpacity
+              style={[genreStyles.option, selected === item.label && genreStyles.optionSelected]}
+              onPress={() => {
+                onChange(item.label === 'None' ? null : item.label);
+                setOpen(false);
+              }}
+            >
+              <Text style={[genreStyles.optionText, selected === item.label && genreStyles.optionTextSelected]}>
+                {item.label}
+              </Text>
+            </TouchableOpacity>
+          )}
+        />
+      )}
     </View>
   );
 }
@@ -440,7 +477,7 @@ export default function App() {
   const [step, setStep]       = useState(1);
   const [loading, setLoading] = useState(false);
   const [form, setForm]       = useState({
-    mood: null, topic: '', vibe: '', genre: null, eras: []
+    mood: null, topic: '', vibe: '', genre: null, era: null
   });
   const [results, setResults] = useState([]);
   const [selected, setSelected] = useState(null);
@@ -450,14 +487,13 @@ export default function App() {
   const getRecommendations = async (moodValue = form.mood, topicValue = form.topic, vibeValue = form.vibe) => {
     setLoading(true);
     try {
-      const erasStr = form.eras.length > 0 ? form.eras.join(',') : null;
       const response = await axios.get(`${API_URL}/recommend`, {
         params: {
           mood: moodValue,
           topic: topicValue,
           vibe: vibeValue,
           genre: form.genre || undefined,
-          eras: erasStr || undefined,
+          era: form.era || undefined,
         },
         timeout: API_TIMEOUT,
       });
@@ -509,7 +545,7 @@ export default function App() {
   };
 
   const resetSearch = () => {
-    setForm({ mood: null, topic: '', vibe: '', genre: null, eras: [] });
+    setForm({ mood: null, topic: '', vibe: '', genre: null, era: null });
     setResults([]);
     setSelected(null);
     setStep(1);
@@ -675,8 +711,8 @@ export default function App() {
 
             <Text style={qStyles.filterLabel}>Era</Text>
             <EraSelector
-              selected={form.eras}
-              onChange={(eras) => setForm({ ...form, eras })}
+              selected={form.era}
+              onChange={(era) => setForm({ ...form, era })}
             />
 
             <TouchableOpacity
