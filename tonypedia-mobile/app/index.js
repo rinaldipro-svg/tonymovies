@@ -599,7 +599,6 @@ function EraSelector({ selected, onChange }) {
         />
       )}
     </View>
-    </View>
   );
 }
 
@@ -666,11 +665,8 @@ export default function App() {
 
   const randomize = async () => {
     // Generate random topic and vibe for variety
-    const topics = ['love', 'adventure', 'survival', 'redemption', 'revenge', 'discovery', 'mystery', 'sacrifice'];
-    const vibes = ['dark', 'epic', 'intimate', 'chaotic', 'contemplative', 'surreal', 'minimal', 'explosive'];
-    
-    const randomTopic = topics[Math.floor(Math.random() * topics.length)];
-    const randomVibe = vibes[Math.floor(Math.random() * vibes.length)];
+    const randomTopic = TOPICS[Math.floor(Math.random() * TOPICS.length)];
+    const randomVibe = VIBES[Math.floor(Math.random() * VIBES.length)];
     
     await getRecommendations(form.mood, randomTopic, randomVibe);
   };
@@ -704,7 +700,6 @@ export default function App() {
   };
 
   const canProceedStep2 = form.mood && form.topic && form.vibe;
-  const canProceedStep3 = form.eras.length > 0;
 
   return (
     <SafeAreaView style={appStyles.safe}>
@@ -868,9 +863,8 @@ export default function App() {
             />
 
             <TouchableOpacity
-              style={[qStyles.btn, !canProceedStep3 && qStyles.btnDisabled]}
+              style={qStyles.btn}
               onPress={() => getRecommendations()}
-              disabled={!canProceedStep3}
               activeOpacity={0.8}
             >
               <Text style={qStyles.btnText}>Find My Films</Text>
