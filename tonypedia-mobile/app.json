@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Tonypedia",
+    "slug": "tonypedia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "bundleIdentifier": "com.anthony.tonypedia",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.anthony.tonypedia"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "22ba8f7b-36bd-4746-a21e-a804bb29d567"
+      }
+    },
+    "owner": "drfunk57",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/22ba8f7b-36bd-4746-a21e-a804bb29d567"
+    }
+  }
+}

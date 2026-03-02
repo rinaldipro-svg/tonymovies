@@ -1,0 +1,452 @@
+{
+  "tt0050083": {
+    "title": "The Seventh Seal",
+    "year": "1957",
+    "award_year": "1957",
+    "is_winner": true
+  },
+  "tt0047478": {
+    "title": "Ikiru",
+    "year": "1952",
+    "award_year": "1952",
+    "is_winner": true
+  },
+  "tt0055630": {
+    "title": "Breathless",
+    "year": "1960",
+    "award_year": "1960",
+    "is_winner": true
+  },
+  "tt0055267": {
+    "title": "La Jet\u00e9e",
+    "year": "1962",
+    "award_year": "1962",
+    "is_winner": true
+  },
+  "tt0059578": {
+    "title": "Pierrot le fou",
+    "year": "1965",
+    "award_year": "1965",
+    "is_winner": true
+  },
+  "tt0068646": {
+    "title": "The Godfather",
+    "year": "1972",
+    "award_year": "1972",
+    "is_winner": true
+  },
+  "tt0071562": {
+    "title": "The Godfather Part II",
+    "year": "1974",
+    "award_year": "1974",
+    "is_winner": true
+  },
+  "tt0076739": {
+    "title": "All the President's Men",
+    "year": "1976",
+    "award_year": "1976",
+    "is_winner": true
+  },
+  "tt0078788": {
+    "title": "Stalker",
+    "year": "1979",
+    "award_year": "1979",
+    "is_winner": true
+  },
+  "tt0080678": {
+    "title": "Kagemusha",
+    "year": "1980",
+    "award_year": "1980",
+    "is_winner": true
+  },
+  "tt0082096": {
+    "title": "Missing",
+    "year": "1982",
+    "award_year": "1982",
+    "is_winner": true
+  },
+  "tt0086250": {
+    "title": "Paris, Texas",
+    "year": "1984",
+    "award_year": "1984",
+    "is_winner": true
+  },
+  "tt0091251": {
+    "title": "The Mission",
+    "year": "1986",
+    "award_year": "1986",
+    "is_winner": true
+  },
+  "tt0095016": {
+    "title": "Wings of Desire",
+    "year": "1987",
+    "award_year": "1987",
+    "is_winner": true
+  },
+  "tt0097576": {
+    "title": "The Sweet Hereafter",
+    "year": "1997",
+    "award_year": "1997",
+    "is_winner": true
+  },
+  "tt0119488": {
+    "title": "Life is Beautiful",
+    "year": "1997",
+    "award_year": "1997",
+    "is_winner": true
+  },
+  "tt0118799": {
+    "title": "Dancer in the Dark",
+    "year": "2000",
+    "award_year": "2000",
+    "is_winner": true
+  },
+  "tt0129986": {
+    "title": "All About My Mother",
+    "year": "1999",
+    "award_year": "1999",
+    "is_winner": true
+  },
+  "tt0158943": {
+    "title": "Tokyo Story",
+    "year": "1953",
+    "award_year": "1953",
+    "is_winner": true
+  },
+  "tt0062622": {
+    "title": "2001: A Space Odyssey",
+    "year": "1968",
+    "award_year": "1968",
+    "is_winner": true
+  },
+  "tt0047396": {
+    "title": "Seven Samurai",
+    "year": "1954",
+    "award_year": "1954",
+    "is_winner": true
+  },
+  "tt0050976": {
+    "title": "M",
+    "year": "1931",
+    "award_year": "1931",
+    "is_winner": true
+  },
+  "tt0031679": {
+    "title": "The Rules of the Game",
+    "year": "1939",
+    "award_year": "1939",
+    "is_winner": true
+  },
+  "tt0043014": {
+    "title": "Citizen Kane",
+    "year": "1941",
+    "award_year": "1941",
+    "is_winner": true
+  },
+  "tt0050825": {
+    "title": "Pather Panchali",
+    "year": "1955",
+    "award_year": "1955",
+    "is_winner": true
+  },
+  "tt0050212": {
+    "title": "Singin' in the Rain",
+    "year": "1952",
+    "award_year": "1952",
+    "is_winner": true
+  },
+  "tt0043472": {
+    "title": "Red River",
+    "year": "1948",
+    "award_year": "1948",
+    "is_winner": true
+  },
+  "tt0049418": {
+    "title": "Sunset Boulevard",
+    "year": "1950",
+    "award_year": "1950",
+    "is_winner": true
+  },
+  "tt0051046": {
+    "title": "Vertigo",
+    "year": "1958",
+    "award_year": "1958",
+    "is_winner": true
+  },
+  "tt0051201": {
+    "title": "Nights of Cabiria",
+    "year": "1957",
+    "award_year": "1957",
+    "is_winner": true
+  },
+  "tt0057115": {
+    "title": "Woman in the Dunes",
+    "year": "1964",
+    "award_year": "1964",
+    "is_winner": true
+  },
+  "tt0043086": {
+    "title": "The Third Man",
+    "year": "1949",
+    "award_year": "1949",
+    "is_winner": true
+  },
+  "tt0035896": {
+    "title": "Casablanca",
+    "year": "1942",
+    "award_year": "1942",
+    "is_winner": true
+  },
+  "tt0034583": {
+    "title": "The Maltese Falcon",
+    "year": "1941",
+    "award_year": "1941",
+    "is_winner": true
+  },
+  "tt0030959": {
+    "title": "Stagecoach",
+    "year": "1939",
+    "award_year": "1939",
+    "is_winner": true
+  },
+  "tt0052311": {
+    "title": "The Manchurian Candidate",
+    "year": "1962",
+    "award_year": "1962",
+    "is_winner": true
+  },
+  "tt0053604": {
+    "title": "Yojimbo",
+    "year": "1961",
+    "award_year": "1961",
+    "is_winner": true
+  },
+  "tt0051251": {
+    "title": "Nights of Cabiria",
+    "year": "1957",
+    "award_year": "1957",
+    "is_winner": true
+  },
+  "tt0055304": {
+    "title": "Les Quatre Cents Coups",
+    "year": "1959",
+    "award_year": "1959",
+    "is_winner": true
+  },
+  "tt0065666": {
+    "title": "8\u00bd",
+    "year": "1963",
+    "award_year": "1963",
+    "is_winner": true
+  },
+  "tt0047528": {
+    "title": "Ugetsu",
+    "year": "1953",
+    "award_year": "1953",
+    "is_winner": true
+  },
+  "tt0041959": {
+    "title": "The Red Shoes",
+    "year": "1948",
+    "award_year": "1948",
+    "is_winner": true
+  },
+  "tt0044706": {
+    "title": "A Place in the Sun",
+    "year": "1951",
+    "award_year": "1951",
+    "is_winner": true
+  },
+  "tt0053125": {
+    "title": "Tokyo Story",
+    "year": "1953",
+    "award_year": "1953",
+    "is_winner": true
+  },
+  "tt0037382": {
+    "title": "Brief Encounter",
+    "year": "1945",
+    "award_year": "1945",
+    "is_winner": true
+  },
+  "tt0031537": {
+    "title": "It Happened One Night",
+    "year": "1934",
+    "award_year": "1934",
+    "is_winner": true
+  },
+  "tt0059597": {
+    "title": "Le Samoura\u00ef",
+    "year": "1967",
+    "award_year": "1967",
+    "is_winner": true
+  },
+  "tt0047450": {
+    "title": "Jigokumon",
+    "year": "1953",
+    "award_year": "1953",
+    "is_winner": true
+  },
+  "tt0052357": {
+    "title": "Rashomon",
+    "year": "1950",
+    "award_year": "1950",
+    "is_winner": true
+  },
+  "tt0157012": {
+    "title": "Reversal of Fortune",
+    "year": "1990",
+    "award_year": "1990",
+    "is_winner": true
+  },
+  "tt0107207": {
+    "title": "Farewell My Concubine",
+    "year": "1993",
+    "award_year": "1993",
+    "is_winner": true
+  },
+  "tt0110912": {
+    "title": "Pulp Fiction",
+    "year": "1994",
+    "award_year": "1994",
+    "is_winner": true
+  },
+  "tt0111161": {
+    "title": "The Shawshank Redemption",
+    "year": "1994",
+    "award_year": "1994",
+    "is_winner": true
+  },
+  "tt0133093": {
+    "title": "The Matrix",
+    "year": "1999",
+    "award_year": "1999",
+    "is_winner": true
+  },
+  "tt0137523": {
+    "title": "Fight Club",
+    "year": "1999",
+    "award_year": "1999",
+    "is_winner": true
+  },
+  "tt0266697": {
+    "title": "The Pianist",
+    "year": "2002",
+    "award_year": "2002",
+    "is_winner": true
+  },
+  "tt0335266": {
+    "title": "Kill Bill: Vol. 1",
+    "year": "2003",
+    "award_year": "2003",
+    "is_winner": true
+  },
+  "tt0360486": {
+    "title": "The Sea Inside",
+    "year": "2004",
+    "award_year": "2004",
+    "is_winner": true
+  },
+  "tt0425210": {
+    "title": "Little Children",
+    "year": "2006",
+    "award_year": "2006",
+    "is_winner": true
+  },
+  "tt0468569": {
+    "title": "The Dark Knight",
+    "year": "2008",
+    "award_year": "2008",
+    "is_winner": true
+  },
+  "tt0425488": {
+    "title": "The Wrestler",
+    "year": "2008",
+    "award_year": "2008",
+    "is_winner": true
+  },
+  "tt0483830": {
+    "title": "Uncle Boonmee Who Can Recall His Past Lives",
+    "year": "2010",
+    "award_year": "2010",
+    "is_winner": true
+  },
+  "tt0478087": {
+    "title": "The Artist",
+    "year": "2011",
+    "award_year": "2011",
+    "is_winner": true
+  },
+  "tt0469494": {
+    "title": "Amour",
+    "year": "2012",
+    "award_year": "2012",
+    "is_winner": true
+  },
+  "tt0372784": {
+    "title": "Blue is the Warmest Color",
+    "year": "2013",
+    "award_year": "2013",
+    "is_winner": true
+  },
+  "tt0454876": {
+    "title": "Winter Sleep",
+    "year": "2014",
+    "award_year": "2014",
+    "is_winner": true
+  },
+  "tt0308922": {
+    "title": "Son of Saul",
+    "year": "2015",
+    "award_year": "2015",
+    "is_winner": true
+  },
+  "tt0462036": {
+    "title": "The Handmaiden",
+    "year": "2016",
+    "award_year": "2016",
+    "is_winner": true
+  },
+  "tt0452614": {
+    "title": "The Square",
+    "year": "2017",
+    "award_year": "2017",
+    "is_winner": true
+  },
+  "tt0816692": {
+    "title": "Happy as Lazzaro",
+    "year": "2018",
+    "award_year": "2018",
+    "is_winner": true
+  },
+  "tt0848228": {
+    "title": "Parasite",
+    "year": "2019",
+    "award_year": "2019",
+    "is_winner": true
+  },
+  "tt0435761": {
+    "title": "Sweat",
+    "year": "2020",
+    "award_year": "2020",
+    "is_winner": true
+  },
+  "tt0926016": {
+    "title": "Titane",
+    "year": "2021",
+    "award_year": "2021",
+    "is_winner": true
+  },
+  "tt1029482": {
+    "title": "Close",
+    "year": "2022",
+    "award_year": "2022",
+    "is_winner": true
+  },
+  "tt0817010": {
+    "title": "The Zone of Interest",
+    "year": "2023",
+    "award_year": "2023",
+    "is_winner": true
+  }
+}

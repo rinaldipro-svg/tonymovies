@@ -1,0 +1,6 @@
+# API Keys Template
+# DO NOT commit actual keys to git. Use .env file or environment variables instead.
+
+Anthropic Key = YOUR_KEY_HERE
+Voyage Key = YOUR_KEY_HERE
+TMDB Key = YOUR_KEY_HERE
